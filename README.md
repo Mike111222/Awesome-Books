@@ -5,7 +5,7 @@
  
   <br/>
 
-  <h3><b>Awesome Books README Template</b></h3>
+  <h3><b>Awesome Books</b></h3>
 
 </div>
 
@@ -35,9 +35,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio website] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
-**[Awesome books is an application for adding new books to the list by Add button, removing books from the list using the remove button. Books list is stored in the local storage]**
+**[Awesome Books is an application for adding new books to the list by Add button, removing books from the list using the remove button. Books list is stored in the local storage]**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,7 +46,9 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">html</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>    
   </ul>
 </details>
 
@@ -68,8 +70,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Displays List of awesome books]**
-  **[Addition of new books]**
+- **[Displays List of Awesome Books]**
+  **[Addition of New Books]**
   **[Removal of a book from the list]**
   **[Local storage]**
 
@@ -87,11 +89,15 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+- Install VS Code and run it on Live Server if you want to check how the code works on local host. 
 
 ### Prerequisites
 
 In order to run this project you need:
+
+1. Browser.
+2. VS Code editor
+3. Git and GitHub
 
 ### Setup
 
@@ -104,7 +110,7 @@ Clone this repository to your desired folder:
 
 ### To run the project
 
-run the index.html
+Open index.html file in VS Code, run via live server extension and see how the code works. You can also visit the Live Demo Link to see how the Project works online.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 Use index.html file.
@@ -115,13 +121,17 @@ Use index.html file.
 
 👤 **Cosmas wasswa**
 👤 **Collins Akorda GitHub: [@firstpj]**
-👤 **Muhammad Amran Khan (Mike)**
+👤 **Muhammad Amran Khan [Mike]**
 
 - GitHub: [@githubhandle](https://github.com/cosywasswa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/cosmas-wasswa-931a2761/)
 
 - GitHub: [@githubhandle](https://github.com/firstpj)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/cosmas-wasswa-931a2761/)
+- LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
+
+- GitHub: [@githubhandle](https://github.com/Mike111222)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Mike111222)
+- Twitter: [@twitterhandle](https://twitter.com/iMike111222)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,8 +139,7 @@ Use index.html file.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Reservation page]**
-- [ ] **[Contact page]**
+- [ ] **[Navigation bar]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +157,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give it a star.
+If you like this project, just reach out to me for more projects even better than this, and please give it a star ⭐️.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,9 +166,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This template was inspired by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
-
-I would like to thank Microverse for the knowledge and guidance given.
+I would like to thank my fellow Authors, my code reviewers and Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
