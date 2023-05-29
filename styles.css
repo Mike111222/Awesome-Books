@@ -1,13 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+}
 
-
-
-
-
-
+#book-list {
+  margin-bottom: 20px;
+  margin-left: 41%;
+}
 
 h1 {
   text-align: center;
 }
 .book-item {
   margin-bottom: 10px;
+}
+
+.book-item span {
+  margin-right: 10px;
+}
+
+#add-book-form input[type="text"] {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-book-form {
+  margin-left: 41%;
 }
