@@ -20,12 +20,11 @@ h1 {
 }
 
 #add-book-form input[type="text"] {
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
+  margin: 15px 10px;
 }
 
 button {
