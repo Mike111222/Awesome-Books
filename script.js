@@ -28,10 +28,8 @@ function renderBooks() {
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
 
-    // Add event listener to remove the book
-    removeButton.addEventListener('click', () => {
-      removeBook(index);
-    });
+    // Add custom attribute to store the book index
+    removeButton.setAttribute('data-book-index', index);
 
     // Append the remove button to the book div
     bookDiv.appendChild(removeButton);
@@ -59,7 +57,7 @@ function addBook(title, author) {
 }
 
 // Function to remove a book from the collection
-function removeBook(index) {
+function removeBookFromCollection(index) {
   // Remove the book from the collection
   books.splice(index, 1);
 
@@ -69,6 +67,21 @@ function removeBook(index) {
   // Render the updated book list on the page
   renderBooks();
 }
+
+// Event listener for the remove button clicks
+document.getElementById('books').addEventListener('click', (event) => {
+  if (event.target.tagName === 'BUTTON') {
+    const bookIndex = event.target.getAttribute('data-book-index');
+
+    // Check if the data-book-index attribute exists
+    if (bookIndex !== null) {
+      const index = parseInt(bookIndex, 10);
+
+      // Call the removeBookFromCollection function
+      removeBookFromCollection(index);
+    }
+  }
+});
 
 // Event listener for the add book form submission
 document.getElementById('add-book-form').addEventListener('submit', (event) => {
@@ -84,7 +97,7 @@ document.getElementById('add-book-form').addEventListener('submit', (event) => {
   if (title && author) {
     // Add the book to the collection
     addBook(title, author);
-    
+
     // Clear the input fields
     titleInput.value = '';
     authorInput.value = '';
