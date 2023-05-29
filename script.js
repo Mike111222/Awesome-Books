@@ -81,7 +81,14 @@ document.getElementById('add-book-form').addEventListener('submit', (event) => {
   const author = authorInput.value;
 
   // Check if both title and author are provided
-  
+  if (title && author) {
+    // Add the book to the collection
+    addBook(title, author);
+    
+    // Clear the input fields
+    titleInput.value = '';
+    authorInput.value = '';
+  }
 });
 
 // Render the initial book list on page load
