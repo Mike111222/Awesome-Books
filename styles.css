@@ -4,10 +4,11 @@ body {
 
 #book-list {
   margin-bottom: 20px;
-  margin-left: 41%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1 {
+h2 {
   text-align: center;
 }
 
@@ -21,21 +22,21 @@ h1 {
 
 #add-book-form input[type="text"] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+  border: 1px solid grey;
 }
 
-button {
+#books {
   display: flex;
   flex-direction: column;
+  border: 2px solid grey;
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#add-book-form {
-  margin-left: 41%;
-}
 
-.add-btn {
-  margin-top: 5px;
-}
