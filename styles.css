@@ -39,8 +39,6 @@ h2 {
   margin-right: auto;
 }
 
-
-
 .book-item {
   display: flex;
   flex-direction: row;
@@ -69,3 +67,4 @@ button {
 .add-btn {
   margin-left: 131px;
 }
+
