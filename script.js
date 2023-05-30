@@ -7,6 +7,7 @@ class Book {
 }
 
 // Library class to manage the collection of books
+//we needed two classes
 class Library {
   constructor() {
     // Retrieve books from localStorage or initialize an empty array
