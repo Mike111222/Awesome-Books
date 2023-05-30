@@ -127,7 +127,13 @@ class Library {
   }
 
   // Function to initialize the library
-  
+  initialize() {
+    // Render the initial book list on page load
+    this.renderBooks();
+
+    // Set up event listeners
+    this.setupEventListeners();
+  }
 }
 
 // Create an instance of the Library class and initialize it
