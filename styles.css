@@ -39,3 +39,32 @@ button {
 .add-btn {
   margin-top: 5px;
 }
+
+.book-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -3px 2px 5px grey;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  width: auto;
+  height: 100%;
+  font-size: 1rem;
+  border: 2px solid grey;
+  font-weight: 300;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding: 2px 5px;
+}
+
+#add-book-form {
+  margin-left: 41%;
+}
+
+.add-btn {
+  margin-left: 131px;
+}
