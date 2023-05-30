@@ -119,9 +119,14 @@ Use index.html file.
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Muhammad Amran Khan [Mike]**
 👤 **Cosmas wasswa**
 👤 **Collins Akorda GitHub: [@firstpj]**
-👤 **Muhammad Amran Khan [Mike]**
+
+
+- GitHub: [@githubhandle](https://github.com/Mike111222)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Mike111222)
+- Twitter: [@twitterhandle](https://twitter.com/iMike111222)
 
 - GitHub: [@githubhandle](https://github.com/cosywasswa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/cosmas-wasswa-931a2761/)
@@ -129,9 +134,6 @@ Use index.html file.
 - GitHub: [@githubhandle](https://github.com/firstpj)
 - LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
 
-- GitHub: [@githubhandle](https://github.com/Mike111222)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Mike111222)
-- Twitter: [@twitterhandle](https://twitter.com/iMike111222)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
