@@ -4,15 +4,12 @@ body {
 
 #book-list {
   margin-bottom: 20px;
-  margin-left: 41%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1 {
+h2 {
   text-align: center;
-}
-
-.book-item {
-  margin-bottom: 10px;
 }
 
 .book-item span {
@@ -21,15 +18,42 @@ h1 {
 
 #add-book-form input[type="text"] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+  border: 1px solid grey;
+}
+
+#books {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -3px 2px 5px grey;
+  width: 100%;
+  height: auto;
 }
 
 button {
-  display: flex;
-  flex-direction: column;
+  width: auto;
+  height: 100%;
+  font-size: 1rem;
+  border: 2px solid grey;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 2px 5px;
 }
 
 #add-book-form {
@@ -37,5 +61,5 @@ button {
 }
 
 .add-btn {
-  margin-top: 5px;
+  margin-left: 131px;
 }
