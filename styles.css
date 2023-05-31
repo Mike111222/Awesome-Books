@@ -2,6 +2,27 @@ body {
   font-family: Arial, sans-serif;
 }
 
+header {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+  border: 1px solid black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    border-right: 1px solid black;
+  }
+
 #book-list {
   margin-bottom: 20px;
   margin-left: auto;
@@ -63,3 +84,4 @@ button {
 .add-btn {
   margin-left: 131px;
 }
+
