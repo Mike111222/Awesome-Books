@@ -3,11 +3,11 @@ body {
 }
 
 header {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30%;
+  gap: 50%;
   border: 1px solid black;
 }
 
@@ -20,15 +20,20 @@ nav ul {
   justify-content: center;
   gap: 2rem;
   list-style: none;
-  }
+}
 
-  nav ul a {
-    text-decoration: none;
-    border-right: 1px solid black;
-    font-size: 20px;
-    padding-right: 5px;
-    color: black;
-  }
+nav ul a {
+  text-decoration: none;
+  border-right: 1px solid black;
+  border-right-style: outset;
+  font-size: 20px;
+  padding-right: 5px;
+  color: black;
+}
+
+nav ul a:active {
+  color: blue;
+}
 
 #book-list {
   margin-bottom: 20px;
@@ -50,7 +55,8 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 15px 0;
-  border: 1px solid grey;
+  border: 2px solid black;
+  height: 20px;
 }
 
 #books {
@@ -90,17 +96,31 @@ button {
 
 .add-btn {
   margin-left: 131px;
+  border: 2px solid black;
 }
 
 .contact {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.contact h2 {
+  font-size: 45px;
+}
+
+.contact p {
+  font-size: 25px;
+}
+
+.contact ul li {
+  font-size: 25px;
+}
+
 footer {
-  width: 95%;
+  width: 100%;
   border: 1px solid black;
   justify-content: left;
 }
