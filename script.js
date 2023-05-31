@@ -1,4 +1,4 @@
-// Class representing the book library
+
 class BookLibrary {
   constructor() {
     // Retrieve books from localStorage or initialize an empty array
@@ -9,9 +9,10 @@ class BookLibrary {
 
   // Function to render the list of books
   renderBooks() {
-    // Get the container for displaying books
+    // Get the container element for displaying books
     const booksDiv = document.getElementById('books');
-    // Clear the container
+
+    // Clear the existing content
     booksDiv.innerHTML = '';
 
     // Iterate over each book in the collection
@@ -23,7 +24,7 @@ class BookLibrary {
       // Create spans for title and author
       const titleSpan = document.createElement('span');
       const authorSpan = document.createElement('span');
-      // Set the text content of the spans
+
       titleSpan.textContent = `Title: ${book.title}`;
       authorSpan.textContent = `Author: ${book.author}`;
 
@@ -34,7 +35,6 @@ class BookLibrary {
       // Create a remove button
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
-      // Add custom attribute to store the book index
       removeButton.setAttribute('data-book-index', index);
 
       // Append the remove button to the book div
@@ -47,7 +47,7 @@ class BookLibrary {
 
   // Function to add a new book to the collection
   addBook(title, author) {
-    // Create a new book object
+
     const book = {
       title,
       author,
@@ -65,7 +65,7 @@ class BookLibrary {
 
   // Function to remove a book from the collection
   removeBookFromCollection(index) {
-    // Remove the book from the collection
+    // Remove the book at the specified index from the collection
     this.books.splice(index, 1);
 
     // Save the updated collection to localStorage
@@ -77,15 +77,17 @@ class BookLibrary {
 
   // Event handler for remove button clicks
   handleRemoveButtonClick(event) {
+    // Check if the clicked element is a button
     if (event.target.tagName === 'BUTTON') {
-      // Get the index of the book to remove from the custom attribute
+
       const bookIndex = event.target.getAttribute('data-book-index');
 
-      // Check if the data-book-index attribute exists
+      // Check if the index exists
       if (bookIndex !== null) {
+        // Convert the index to a number
         const index = parseInt(bookIndex, 10);
 
-        // Call the removeBookFromCollection function
+        // Call the removeBookFromCollection function to remove the book
         this.removeBookFromCollection(index);
       }
     }
@@ -93,6 +95,7 @@ class BookLibrary {
 
   // Event handler for add book form submission
   handleAddBookFormSubmit(event) {
+    // Prevent the form from submitting and refreshing the page
     event.preventDefault();
 
     // Get the input values from the form
@@ -168,12 +171,17 @@ class BookLibrary {
 
   // Set up event listeners
   setupEventListeners() {
-    // Event listener for remove button clicks
+    // Get the container element for displaying books
     const booksContainer = document.getElementById('books');
+
+    // Add event listener for remove button clicks
     booksContainer.addEventListener('click', this.handleRemoveButtonClick.bind(this));
 
-    // Event listener for add book form submission
+    // Get the form element for adding books
     const addBookForm = document.getElementById('add-book-form');
+
+    // Add event listener for form submission
+
     addBookForm.addEventListener('submit', this.handleAddBookFormSubmit.bind(this));
 
     // Event listener for navigation links clicks
@@ -183,7 +191,6 @@ class BookLibrary {
     });
   }
 
-  // Initialize the book library
   initialize() {
     // Render the initial book list on page load
     this.renderBooks();
@@ -197,18 +204,8 @@ class BookLibrary {
   }
 }
 
-// Create an instance of the BookLibrary class
-const bookLibrary = new BookLibrary();
 
-// Initialize the book library
+// Create an instance of the BookLibrary class and initialize it
+const bookLibrary = new BookLibrary();
 bookLibrary.initialize();
 
-function updateDateTime() {
-  const now = new Date();
-  const date = now.toLocaleDateString();
-  const time = now.toLocaleTimeString();
-  document.getElementById('datetime').innerHTML = `${date} ${time}`;
-}
-
-// call updateDateTime function every second to update the time
-setInterval(updateDateTime, 1000);
