@@ -1,4 +1,3 @@
-
 class BookLibrary {
   constructor() {
     // Retrieve books from localStorage or initialize an empty array
@@ -47,7 +46,6 @@ class BookLibrary {
 
   // Function to add a new book to the collection
   addBook(title, author) {
-
     const book = {
       title,
       author,
@@ -79,7 +77,6 @@ class BookLibrary {
   handleRemoveButtonClick(event) {
     // Check if the clicked element is a button
     if (event.target.tagName === 'BUTTON') {
-
       const bookIndex = event.target.getAttribute('data-book-index');
 
       // Check if the index exists
@@ -204,8 +201,6 @@ class BookLibrary {
   }
 }
 
-
 // Create an instance of the BookLibrary class and initialize it
 const bookLibrary = new BookLibrary();
 bookLibrary.initialize();
-
