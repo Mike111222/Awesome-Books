@@ -140,3 +140,13 @@ class Library {
 // Create an instance of the Library class and initialize it
 const library = new Library();
 library.initialize();
+
+function updateDateTime() {
+  const now = new Date();
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+  document.getElementById('datetime').innerHTML = `${date} ${time}`;
+}
+
+// call updateDateTime function every second to update the time
+setInterval(updateDateTime, 1000);
