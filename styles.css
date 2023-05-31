@@ -35,14 +35,14 @@ nav ul a:active {
   color: blue;
 }
 
- #current-time {
+#current-time {
   display: flex;
   justify-content: flex-end;
   width: 80%;
   margin: 1rem auto 0;
   font-size: 25px;
   color: rgb(4, 162, 102);
-  }
+}
 
 #book-list {
   margin-bottom: 20px;
@@ -100,7 +100,7 @@ button {
 }
 
 #add-book-form {
-  margin-left: 41%;
+  margin-left: 43%;
 }
 
 .add-btn {
@@ -108,7 +108,18 @@ button {
   border: 2px solid black;
 }
 
-.contact {
+.add-title {
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -116,25 +127,28 @@ button {
   align-items: center;
 }
 
-.contact h2 {
-  font-size: 45px;
-}
-
-.contact p {
-  font-size: 25px;
-}
-
-.contact ul li {
-  font-size: 25px;
-}
-
-footer {
-  width: 100%;
-  border: 1px solid black;
-  justify-content: left;
+.contact-info {
+  font-size: 2rem;
 }
 
 footer p {
   font-size: 20px;
   padding-left: 10px;
+}
+
+#contact p {
+  font-size: 25px;
+}
+
+#contact ul li {
+  font-size: 25px;
+}
+
+footer {
+  width: 98%;
+  border: 1px solid black;
+  justify-content: left;
+  bottom: 0;
+  position: fixed;
+  margin-left: 3px;
 }
