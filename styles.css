@@ -11,6 +11,10 @@ header {
   border: 1px solid black;
 }
 
+header h3 {
+  margin-right: 10rem;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -21,6 +25,9 @@ nav ul {
   nav ul a {
     text-decoration: none;
     border-right: 1px solid black;
+    font-size: 20px;
+    padding-right: 5px;
+    color: black;
   }
 
 #book-list {
@@ -85,3 +92,20 @@ button {
   margin-left: 131px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 95%;
+  border: 1px solid black;
+  justify-content: left;
+}
+
+footer p {
+  font-size: 20px;
+  padding-left: 10px;
+}
