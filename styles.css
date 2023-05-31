@@ -35,6 +35,15 @@ nav ul a:active {
   color: blue;
 }
 
+ #current-time {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 1rem auto 0;
+  font-size: 25px;
+  color: rgb(4, 162, 102);
+  }
+
 #book-list {
   margin-bottom: 20px;
   margin-left: auto;
