@@ -37,7 +37,7 @@
 
 # 📖 [Awesome Books] <a name="about-project"></a>
 
-**[Awesome Books is an application for adding new books to the list by Add button, removing books from the list using the remove button. Books list is stored in the local storage]**
+**[Awesome Books is an application for adding new books to the list by Add button, removing books from the list using the remove button. Books list is stored in the local storage. The website is an SPA-Single Page Application. It displays the particular section accordigly when clicked on navigation bar.]**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,9 +71,11 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Displays List of Awesome Books]**
-  **[Addition of New Books]**
-  **[Removal of a book from the list]**
-  **[Local storage]**
+- **[Addition of New Books]**
+- **[Removal of a book from the list]**
+- **[Local storage]**
+- **[Navigation Bar, Header, Footer]**
+- **[Three navigation links to load List, Add A New Book and Contact Section]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -2,9 +2,11 @@ class BookLibrary {
   constructor() {
     // Retrieve books from localStorage or initialize an empty array
     this.books = JSON.parse(localStorage.getItem('books')) || [];
+    // Keep track of the current section being displayed
+    this.currentSection = 'list';
   }
 
-  // Function to render the book list on the page
+  // Function to render the list of books
   renderBooks() {
     // Get the container element for displaying books
     const booksDiv = document.getElementById('books');
@@ -22,7 +24,6 @@ class BookLibrary {
       const titleSpan = document.createElement('span');
       const authorSpan = document.createElement('span');
 
-      // Set the text content of the spans with book information
       titleSpan.textContent = `Title: ${book.title}`;
       authorSpan.textContent = `Author: ${book.author}`;
 
@@ -33,8 +34,6 @@ class BookLibrary {
       // Create a remove button
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
-
-      // Add a custom attribute to store the book index
       removeButton.setAttribute('data-book-index', index);
 
       // Append the remove button to the book div
@@ -47,7 +46,6 @@ class BookLibrary {
 
   // Function to add a new book to the collection
   addBook(title, author) {
-    // Create a book object with title and author
     const book = {
       title,
       author,
@@ -75,11 +73,10 @@ class BookLibrary {
     this.renderBooks();
   }
 
-  // Event handler for the remove button clicks
+  // Event handler for remove button clicks
   handleRemoveButtonClick(event) {
     // Check if the clicked element is a button
     if (event.target.tagName === 'BUTTON') {
-      // Get the book index from the custom attribute
       const bookIndex = event.target.getAttribute('data-book-index');
 
       // Check if the index exists
@@ -93,7 +90,7 @@ class BookLibrary {
     }
   }
 
-  // Event handler for the add book form submission
+  // Event handler for add book form submission
   handleAddBookFormSubmit(event) {
     // Prevent the form from submitting and refreshing the page
     event.preventDefault();
@@ -115,7 +112,61 @@ class BookLibrary {
     }
   }
 
-  // Function to set up event listeners
+  // Event handler for navigation links clicks
+  handleNavigationClick(event) {
+    event.preventDefault();
+
+    // Get the section from the clicked link's href attribute
+    const section = event.target.getAttribute('href').substring(1);
+
+    // Update the current section
+    this.currentSection = section;
+
+    // Update the navigation and content display
+    this.updateNavigation();
+    this.updateContent();
+  }
+
+  // Update the active state of navigation links
+  updateNavigation() {
+    // Get all navigation links
+    const navigationLinks = document.querySelectorAll('nav ul li a');
+
+    // Loop through each link
+    navigationLinks.forEach((link) => {
+      // Get the section from the link's href attribute
+      const section = link.getAttribute('href').substring(1);
+
+      // Check if the section matches the current section
+      if (section === this.currentSection) {
+        // Add the 'active' class to the link
+        link.classList.add('active');
+      } else {
+        // Remove the 'active' class from the link
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  // Update the display of content sections
+  updateContent() {
+    // Get all content sections
+    const sections = document.querySelectorAll('section');
+
+    // Loop through each section
+    sections.forEach((section) => {
+      // Check if the section id matches the current section
+      if (section.id === this.currentSection) {
+        // Display the section
+        section.style.display = 'block';
+      } else {
+        // Hide the section
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  // Set up event listeners
   setupEventListeners() {
     // Get the container element for displaying books
     const booksContainer = document.getElementById('books');
@@ -127,16 +178,26 @@ class BookLibrary {
     const addBookForm = document.getElementById('add-book-form');
 
     // Add event listener for form submission
+
     addBookForm.addEventListener('submit', this.handleAddBookFormSubmit.bind(this));
+
+    // Event listener for navigation links clicks
+    const navigationLinks = document.querySelectorAll('nav ul li a');
+    navigationLinks.forEach((link) => {
+      link.addEventListener('click', this.handleNavigationClick.bind(this));
+    });
   }
 
-  // Function to initialize the book library
   initialize() {
     // Render the initial book list on page load
     this.renderBooks();
 
     // Set up event listeners
     this.setupEventListeners();
+
+    // Update the navigation and content display
+    this.updateNavigation();
+    this.updateContent();
   }
 }
 

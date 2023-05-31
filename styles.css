@@ -2,6 +2,48 @@ body {
   font-family: Arial, sans-serif;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+  border: 1px solid black;
+}
+
+header h3 {
+  margin-right: 10rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  border-right: 1px solid black;
+  border-right-style: outset;
+  font-size: 20px;
+  padding-right: 5px;
+  color: black;
+}
+
+nav ul a:active {
+  color: blue;
+}
+
+#current-time {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 1rem auto 0;
+  font-size: 25px;
+  color: rgb(4, 162, 102);
+}
+
 #book-list {
   margin-bottom: 20px;
   margin-left: auto;
@@ -22,7 +64,8 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 15px 0;
-  border: 1px solid grey;
+  border: 2px solid black;
+  height: 20px;
 }
 
 #books {
@@ -57,9 +100,55 @@ button {
 }
 
 #add-book-form {
-  margin-left: 41%;
+  margin-left: 43%;
 }
 
 .add-btn {
   margin-left: 131px;
+  border: 2px solid black;
+}
+
+.add-title {
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#contact p {
+  font-size: 25px;
+}
+
+#contact ul li {
+  font-size: 25px;
+}
+
+footer {
+  width: 98%;
+  border: 1px solid black;
+  justify-content: left;
+  bottom: 0;
+  position: fixed;
+  margin-left: 3px;
 }
