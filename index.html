@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Awesome Books</title>
-  </head>
 
-  <body>
-    <header>
-        <h3>Awesome Books</h3>
-        <nav>
-          <ul>
-            <li><a href="#home">List</a></li>
-            <li><a href="#about">Add new</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <section class="list">
-    <div id="book-list">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Awesome Books</title>
+</head>
+
+<body>
+  <header>
+    <h3>Awesome Books</h3>
+    <nav>
+      <ul>
+        <li><a href="#list">List</a></li>
+        <li><a href="#add">Add New</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="current-time">
+      <p id="datetime"></p>
+    </section>
+    <section id="list">
+      <div id="book-list">
         <h2>All Awesome Books</h2>
         <div id="books"></div>
-    </div>
-  </section>
-    <section id="form-section">
-        <form id="add-book-form">
-          <input type="text" id="title" placeholder="Title" />
-          <input type="text" id="author" placeholder="Author" />
-          <button type="submit" class="add-btn">Add</button>
-        </form>
+      </div>
     </section>
-    <section class="contact">
-      <h2>Contact information</h2>
-      <h3>Do you have any questions or you just want to say "hello"</h3>
+    <section id="add">
+        <h2 class="add-title">Add a New Book</h2>
+      <form id="add-book-form">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <button type="submit" class="add-btn">Add</button>
+      </form>
+    </section>
+    <section id="contact">
+      <div class="contact-details">
+      <h2 class="contact-info">Contact Information</h2>
+      <h3>Do you have any questions or you just want to say "Hello"</h3>
       <p>You can reach out to us!</p>
       <ul>
-        <li>our e-mail mail@mail.com</li>
-        <li>our phone number, 007233344566</li>
-        <li>our adress: streetname 22,3333,city,country</li>
+        <li>Our e-mail mail@mail.com</li>
+        <li>Our phone number, 007233344566</li>
+        <li>Our address: street name 22,3333,city,country</li>
       </ul>
+    </div>
     </section>
   </main>
-  <section id="current-time">
-    <p id="datetime"></p>
-  </section>
+  
   <footer>
-    <p>Copyright@2023 Cosmas, Mike, Collins</p>
+    <p>&copy; 2023 Mike, Cosmas, Collins</p>
   </footer>
-    <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
