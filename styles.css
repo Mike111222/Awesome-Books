@@ -1,18 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: blanchedalmond;
 }
 
 header {
   width: 100%;
+  height: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50%;
   border: 1px solid black;
+  background-color: rgb(223, 120, 120);
+  margin-bottom: 2.5rem;
 }
 
 header h3 {
-  margin-right: 10rem;
+  margin-left: 10rem;
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -20,6 +30,7 @@ nav ul {
   justify-content: center;
   gap: 2rem;
   list-style: none;
+  margin-right: 7rem;
 }
 
 nav ul a {
@@ -31,8 +42,15 @@ nav ul a {
   color: black;
 }
 
+nav ul a:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
 nav ul a:active {
   color: blue;
+  border-bottom: 1px solid wheat;
 }
 
 #current-time {
@@ -44,6 +62,10 @@ nav ul a:active {
   color: rgb(4, 162, 102);
 }
 
+.main {
+  background-color: blanchedalmond;
+}
+
 #book-list {
   margin-bottom: 20px;
   margin-left: auto;
@@ -52,6 +74,7 @@ nav ul a:active {
 
 h2 {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .book-item span {
@@ -65,14 +88,16 @@ h2 {
   align-items: center;
   margin: 15px 0;
   border: 2px solid black;
-  height: 20px;
+  height: 30px;
+  width: 40%;
+  background-color: whitesmoke;
 }
 
 #books {
   display: flex;
   flex-direction: column;
   border: 2px solid grey;
-  width: 40%;
+  width: 60%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -83,9 +108,13 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  box-shadow: -3px 2px 5px grey;
   width: 100%;
   height: auto;
+  border: 1px solid grey;
+}
+
+.book-item:nth-child(odd) {
+  background-color: #d3d0d0;
 }
 
 button {
@@ -97,6 +126,14 @@ button {
   margin-right: 20px;
   margin-left: 20px;
   padding: 2px 5px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: lightcoral;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 #add-book-form {
@@ -104,7 +141,7 @@ button {
 }
 
 .add-btn {
-  margin-left: 131px;
+  margin-left: 271px;
   border: 2px solid black;
 }
 
@@ -129,26 +166,30 @@ button {
 
 .contact-info {
   font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact ul li {
+  font-size: 1.5rem;
 }
 
 footer p {
   font-size: 20px;
   padding-left: 10px;
+  margin-top: 1.5rem;
 }
 
-#contact p {
-  font-size: 25px;
-}
-
-#contact ul li {
-  font-size: 25px;
+#contact h3 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
 }
 
 footer {
-  width: 98%;
+  width: 100%;
+  height: 5rem;
   border: 1px solid black;
-  justify-content: left;
+  text-align: left;
   bottom: 0;
   position: fixed;
-  margin-left: 3px;
+  background-color: cadetblue;
 }
