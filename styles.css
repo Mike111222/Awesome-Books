@@ -42,6 +42,11 @@ nav ul a {
   color: black;
 }
 
+.contact-item a {
+  text-decoration: none;
+  color: darkred;
+}
+
 nav ul a:hover {
   cursor: pointer;
   color: white;
@@ -53,13 +58,16 @@ nav ul a:active {
   border-bottom: 1px solid wheat;
 }
 
-#current-time {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  margin: 1rem auto 0;
-  font-size: 25px;
-  color: rgb(4, 162, 102);
+.contact-item a:hover,
+.contact-item a:focus {
+  color: darkblue;
+  border-bottom: 1px solid #fff;
+}
+
+#datetime {
+  text-align: right;
+  margin-right: 6rem;
+  margin-top: -2.5rem;
 }
 
 .main {
