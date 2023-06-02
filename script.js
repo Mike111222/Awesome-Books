@@ -199,8 +199,19 @@ class BookLibrary {
     this.updateNavigation();
     this.updateContent();
   }
-}
 
+  showTime = () => {
+    const dateTime = document.getElementById('datetime');
+    const timeDate = () => {
+      setInterval(() => {
+        const date = new Date().toUTCString();
+        dateTime.innerHTML = date.toString().substring(0, date.indexOf('GMT'));
+      }, 0);
+    };
+    timeDate();
+  };
+}
 // Create an instance of the BookLibrary class and initialize it
 const bookLibrary = new BookLibrary();
 bookLibrary.initialize();
+bookLibrary.showTime();
