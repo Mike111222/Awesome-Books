@@ -180,7 +180,7 @@ I would like to thank my fellow Authors, my code reviewers and Microverse.
 
 - **[How can the project be improved]**
 
-  - [More features can be intergrated by adding more pages forexample reservation page]
+  - [More features can be intergrated by adding more pages for example reservation page]
 
 - **[Can I use this project for study purposes]**
 
