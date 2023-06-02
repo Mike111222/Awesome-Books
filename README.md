@@ -83,7 +83,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--This is our pair programming project[Live Demo Link]()
+- This is Awesome Books' project <a href="https://mike111222.github.io/Awesome-Books/">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
