@@ -24,8 +24,8 @@ class BookLibrary {
       const titleSpan = document.createElement('span');
       const authorSpan = document.createElement('span');
 
-      titleSpan.textContent = `Title: ${book.title}`;
-      authorSpan.textContent = `Author: ${book.author}`;
+      titleSpan.textContent = `"${book.title}"`;
+      authorSpan.textContent = `By: "${book.author}"`;
 
       // Append the spans to the book div
       bookDiv.appendChild(titleSpan);
